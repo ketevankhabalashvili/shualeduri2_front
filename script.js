@@ -6,13 +6,21 @@ var image_sect2 = document.createElement("img");
 var image_sect3 = document.createElement("img");
 var image_sect4 = document.createElement("img");
 
+var img_text1_sect = document.createElement("p");
+var img_text2_sect = document.createElement("p");
+var img_text3_sect = document.createElement("p");
+
+var img_text1 = document.createTextNode("title");
+var img_text2 = document.createTextNode("sub title");
+var img_text3 = document.createTextNode("lorem ipsum dolor sit amet");
+
+
 
 
 var text1 = document.createTextNode('RESTAURANT');
 var text2 = document.createTextNode('Explore our menu and eat what you want');
 
-// var image1 = document.cre
-// var image2
+
 
 image_sect1.setAttribute("src", "images/screen1.png");
 image_sect1.setAttribute("width", "170");
@@ -37,6 +45,7 @@ image_sect4.setAttribute("alt", "");
 
 
 document.getElementById('images1').appendChild(image_sect1);
+
 document.getElementById('images2').appendChild(image_sect4);
 
 
@@ -51,5 +60,10 @@ var div_id1 = document.getElementById('title-section');
 var div_id2 = document.getElementById('subtitle-section');
 div_id1.appendChild(title);
 div_id2.appendChild(subtitle);
+
+
+function myFunction() {
+    alert('ინფორმაცია წარმატებით გაიგზავნა');
+}
 
 
